@@ -18,10 +18,10 @@ def animasi():
 #ini adalah logo
 def logo():
     print("""
-\033[44;1mHello Dunia kode Lovers\033[00;1m
+\033[44;1mHello Dunia Termux Lovers\033[00;1m
 \033[34;1m（\033[35;1m；\033[36;1m￣\033[32;1mェ\033[36;1m￣\033[34;1m）\033[32;1mTema Linux
   \033[37;1m[\033[32;1mAuthor:Tegar_ID\033[37;1m]
-\033[37;1m[\033[32;1mDunia Kode Developer\033[37;1m]
+\033[37;1m[\033[32;1mDunia Termux Developer\033[37;1m]
 """)
 
 # menu main
@@ -55,12 +55,12 @@ def pasang():
     nama = input("Masukan Nama Anda (bebas) : ")
     tema = open(".bashrc", 'w')
     tema.write("""
-#Created By Dunia Kode Developer
+#Created By Awnsntt
 clear
 echo "
-\033[31;1m█████████████████   \033[37;1m[\033[41;1mLASKAR CYBER INDONESIA\033[00;1m\033[37;1m]
+\033[31;1m█████████████████   \033[37;1m[\033[41;1mAlwan Suesanto\033[00;1m\033[37;1m]
 \033[31;1m█████████████████
-\033[37;1m█████████████████ \033[37;1m[\033[44;1mWe Are Anonymous Indonesian\033[00;1m\033[37;1m]
+\033[37;1m█████████████████ \033[37;1m[\033[44;1mWe Are Indonesian Cyber\033[00;1m\033[37;1m]
 \033[37;1m█████████████████"
 echo ""
 PS1='\n\[\033[0;92m\]%s\[\033[00m\]@\[\033[0;92m\]root\[\033[0;96m\]:${PWD/*\//}\[\033[00m\](\#)\[\033[0;92m\]~#\[\033[00m\] '
@@ -75,12 +75,12 @@ PS1='\n\[\033[0;92m\]%s\[\033[00m\]@\[\033[0;92m\]root\[\033[0;96m\]:${PWD/*\//}
     os.system("cp termux.properties $HOME/.termux")
     animasi()
     print("\n\033[43;1mTema Berhasil Terpasang\033[00;1m")
-    print("\n\033[42;1mJangan Lupa Subscribe Channel Dunia Kode\033[00;1m")
+    print("\n\033[42;1mJangan Lupa Follow instagram @awnsntt_\033[00;1m")
     login = input("\033[32;1m[Enter Untuk Melihat Tema]\n")
     os.system("termux-reload-settings")
     os.system("login")
 
 def kembali():
     os.system("clear")
-    exit("\033[34;1mJangan Lupa Subscribe Channel Dunia Kode:)")
+    exit("\033[34;1mJangan Lupa Follow instagram @awnsntt_:)")
 main()
